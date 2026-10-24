@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f7f2">
+  <meta name="description" content="Réservez simplement vos trajets en train au Maroc avec Trano.">
+  <title>Trano — Le Maroc, à votre rythme</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#accueil" aria-label="Trano, accueil"><span class="brand-mark">t</span> trano</a>
+    <nav class="nav-links" aria-label="Navigation principale">
+      <a href="#accueil">Accueil</a>
+      <a href="#destinations">Destinations</a>
+      <a href="#reservation">Réserver un billet</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="login-link" href="#reservation">Connexion</a>
+      <a class="nav-cta" href="#reservation">Mes voyages <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="accueil">
+      <div class="hero-content">
+        <p class="eyebrow">Le Maroc en train</p>
+        <h1>Le voyage fait partie de <em>l’aventure.</em></h1>
+        <p class="hero-copy">Des villes qui se rapprochent, des paysages qui défilent. Trouvez votre prochain départ et laissez le Maroc vous surprendre.</p>
+      </div>
+      <div class="hero-note"><span class="note-dot"></span> Casa, Rabat, Tanger et bien plus</div>
+    </section>
+
+    <section class="booking-wrap" id="reservation" aria-label="Réserver un trajet">
+      <form class="booking-card" id="booking-form">
+        <div class="booking-heading">
+          <h2>Où souhaitez-vous aller ?</h2>
+          <span class="trip-type">Réservation de train · Maroc</span>
+        </div>
+        <div class="trip-fields">
+          <div class="field">
+            <label for="departure">Départ</label>
+            <select id="departure" name="departure">
+              <option value="Casablanca">Casablanca</option>
+              <option value="Rabat">Rabat</option>
+              <option value="Marrakech">Marrakech</option>
+              <option value="Tanger">Tanger</option>
+              <option value="Fès">Fès</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="arrival">Destination</label>
+            <select id="arrival" name="arrival">
+              <option value="Rabat">Rabat</option>
+              <option value="Casablanca">Casablanca</option>
+              <option value="Marrakech">Marrakech</option>
+              <option value="Tanger">Tanger</option>
+              <option value="Fès">Fès</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="travel-date">Date de départ</label>
+            <input id="travel-date" name="date" type="date" required>
+          </div>
+          <div class="field">
+            <label for="passengers">Voyageurs</label>
+            <select id="passengers" name="passengers">
+              <option value="1">1 voyageur</option>
+              <option value="2">2 voyageurs</option>
+              <option value="3">3 voyageurs</option>
+              <option value="4">4 voyageurs</option>
+            </select>
+          </div>
+          <button class="primary-button" type="submit">Rechercher un train <span aria-hidden="true">→</span></button>
+        </div>
+        <p class="booking-message" id="booking-message" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="destinations" id="destinations">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">À portée de train</p>
+          <h2>Le Maroc vous attend.</h2>
+        </div>
+        <a class="all-link" href="#reservation">Explorer les trajets <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="destination-grid">
+        <a class="destination" href="#reservation" data-city="Marrakech" aria-label="Découvrir Marrakech">
+          <img src="https://images.unsplash.com/photo-1539020140153-e479b8c22e70?auto=format&fit=crop&w=1100&q=80" alt="Architecture et ruelles colorées de Marrakech" loading="lazy">
+          <div class="destination-info"><div><p>Couleurs, jardins, médina</p><h3>Marrakech</h3></div><span class="arrow" aria-hidden="true">↗</span></div>
+        </a>
+        <a class="destination" href="#reservation" data-city="Tanger" aria-label="Découvrir Tanger">
+          <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=800&q=80" alt="Vue ensoleillée sur une ville marocaine" loading="lazy">
+          <div class="destination-info"><div><p>La mer, autrement</p><h3>Tanger</h3></div><span class="arrow" aria-hidden="true">↗</span></div>
+        </a>
+        <a class="destination" href="#reservation" data-city="Rabat" aria-label="Découvrir Rabat">
+          <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=800&q=80" alt="Paysage urbain du Maroc" loading="lazy">
+          <div class="destination-info"><div><p>La douceur de la côte</p><h3>Rabat</h3></div><span class="arrow" aria-hidden="true">↗</span></div>
+        </a>
+      </div>
+    </section>
+
+    <section class="bottom-band">
+      <p>Un billet, et tout le Maroc s’ouvre à vous.</p>
+      <a href="#reservation">Préparer mon voyage <span aria-hidden="true">→</span></a>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand" href="#accueil"><span class="brand-mark">t</span> trano</a>
+    <span>© 2026 Trano · Voyager au Maroc, simplement.</span>
+  </footer>
+
+  <script>
+    const dateInput = document.querySelector("#travel-date");
+    const today = new Date();
+    dateInput.min = new Date(today.getTime() - today.getTimezoneOffset() * 60000).toISOString().slice(0, 10);
+
+    document.querySelectorAll(".destination").forEach((destination) => {
+      destination.addEventListener("click", () => {
+        document.querySelector("#arrival").value = destination.dataset.city;
+      });
+    });
+
+    document.querySelector("#booking-form").addEventListener("submit", (event) => {
+      event.preventDefault();
+      const departure = document.querySelector("#departure").value;
+      const arrival = document.querySelector("#arrival").value;
+      const message = document.querySelector("#booking-message");
+
+      if (departure === arrival) {
+        message.textContent = "Choisissez deux villes différentes pour votre trajet.";
+        return;
+      }
+
+      message.textContent = `Votre recherche ${departure} → ${arrival} est prête. La réservation en ligne sera bientôt disponible.`;
+    });
+  </script>
+</body>
+</html>
+

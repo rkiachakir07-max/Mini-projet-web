@@ -1,0 +1,17 @@
+# Fichiers système
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Dépendances et fichiers générés
+node_modules/
+dist/
+build/
+
+# Fichiers d'environnement locaux
+.env
+.env.*
+!.env.example
+
+# Configuration et données locales de Qodo
+.qodo/
